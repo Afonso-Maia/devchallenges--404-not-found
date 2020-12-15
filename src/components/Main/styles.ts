@@ -1,17 +1,8 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
-  h1 {
-    color: #333;
-    font-family: Inconsolata;
-    font-size: 24px;
-    line-height: 25px;
-    text-transform: uppercase;
-    letter-spacing: -0.08em;
-
-    /* Change on Desktop */
-    margin: 24px 0 64px 24px;
-  }
+export const Wrapper = styled.main`
+  display: grid;
+  grid-template-rows: repeat(min-content, 4);
 
   h2 {
     color: #333;
@@ -36,6 +27,8 @@ export const Wrapper = styled.div`
   }
 
   button {
+    display: inline-block;
+    width: 216px;
     border: none;
     background: #333;
     color: #fff;
@@ -49,16 +42,5 @@ export const Wrapper = styled.div`
 
     margin-bottom: 96px;
     margin-left: 24px;
-  }
-
-  span {
-    display: block;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    color: #333;
-    padding-bottom: 24px;
   }
 `
